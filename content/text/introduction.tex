@@ -1,0 +1,63 @@
+\section{Introduction}
+% \srinath{TODO: General introdcution with motivation and summary of state of the art.}
+
+\subsection{Goal}
+We are imaging a scene containing objects of unknown geometry and known to contain a specular reflector within the field of view.
+Our goal is to estimate a 3D point set $P$ lying on the surface of objects of interest in the scene.
+To this end, we use information from direct and indirect (\emph{e.g.} reflections, multipath due to reflection) image observations.
+The input to our method consists of shutter images $S_t$ at each time instant from CW or gated time-of-flight sensors, and known pose of the camera and the reflector.
+
+\subsection{Assumptions}
+In the first iteration of this method, we make the following assumptions.
+\begin{itemize}
+\item The pose of the reflector relative to the camera is known.
+\item The reflector is a flat, perfect mirror.
+\item Multipath effects other than those due to the mirror are ignored.
+\item Known template mesh of the model? (if we end up using an iterative solution to estimate normals)
+\end{itemize}
+
+\subsection{Geometric Solution to Enriching Depth Estimates}
+There are 5 different types of pixels that will be observed in shutter images $S_t$ when the imaging a scene contains a reflector, see Figure~\ref{fig:types_of_pixels}.
+
+\subsection{Hand Tracking with Estimated Point Set}
+
+\subsection{Relaxations and Future Extensions}
+\begin{itemize}
+\item Estimate confidence of each pixel since we have mulitple reflections.
+\item Relax Assumptions: Both camera and reflector move.
+\item Relax Assumptions: Imperfect reflector.
+\item Relax Assumptions: Non-flat reflector.
+\item Reconstruction of surface reflectance properties.
+\end{itemize}
+
+\subsection{Random Points for Paper}
+\begin{itemize}
+  % 
+\item Reviewers may ask: Why note use a structured light sensor? In a structured light sensor, the parts that are seen twice (i.e. the mulitpath pixels in ToF) also are covered by the structured light pattern twice. Resolving this is as hard/harder as resolving multipath. \Dan{I've seen multiple structure light setups working together i.e: \url{https://www.cs.unc.edu/~maimone/media/kinect_VR_2012.pdf}}
+  % 
+\item Can make a figure: along x-axis we have line of sight imaging, partial LOS+out of sight, fully out of sight. What should be along Y-axis?. The reason why ours is a hard problem is because we do partial LOS+out of sight using a mirror. Much harder due to multipath.
+  % 
+\item For evaluation, we would need to show why we need this depth correction. What would happen if we do tracking on the uncorrected (but ray folded) depths? My guess is the noise would kill the tracking. Then we need to show that the correction improves things quite a bit and helps because we now have all this extra information.
+  % 
+\end{itemize}
+
+Applications that would appeal to a SIGGRAPH audience. These random scribbles need to be 
+\begin{itemize}
+\item Games in which people play in front of mirror with their own reflection of hands and maybe full body.
+\item Tracking the mirror is cool. This means we can augment the mirror with content.
+\item Summary title: Using multipath for fun and profit
+\item Use a mirror as a display since you can render stuff on the mirror
+\end{itemize}
+
+More miscellaneous ideas.
+
+\begin{itemize}
+\item Apply bilateral filter to raw ir
+\item Do background subtraction before tracking hands in the reflection. This gives super clear results
+\item Order two way mirror sample for testing
+\item Interactive AR editing on a whiteboard (could just be one of many possible applications). Person writes something on a reflective whiteboard. This text/image can be recognized/animated, perhaps in 3D together with hand tracking.\item Tablet/monitor/phone/display replacement with hand-based interaction
+\item Tabletop interaction
+\item In the future, it's not unreasonable to assume that walls will be painted with IT retroreflectors and lights will be modulated IR lights. This information can be leveraged for ToF
+\item It's ok to make certain hardware assumptions (painted surfaces, fixed cameras)
+\item Light field imaging can be done :)
+\end{itemize}
