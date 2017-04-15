@@ -12,7 +12,7 @@
      
 \sloppy
 
-\title{feather: Máquina de busca de entidades baseada na Wikipedia e Wikidata}
+\title{feather: Máquina de busca de entidades baseada na Wikipedia e Wikidata. Sique los Pasos!}
 
 \author{Matheus C. Candido\inst{1}}
 
@@ -105,7 +105,7 @@ P18                           & thumbnail                      & Link com imagem
 
 \subsubsection{Streamer}
 
-Este é um componente importantíssimo, atrelado ao indexador da máquina. Ele é responsável por enviar os documentos do novo arquivo de \emph{dump} em forma de lotes para o Elasticsearch. A ferramenta utilizada foi o \emph{stream2es}, um precursor do \emph{Logstash}. Ele funciona de várias maneiras e uma delas é através de \emph{streaming} de linhas vindas da \texttt{stdin}.
+Este é um componente importantísssimo, atrelado ao indexador da máquina. Ele é responsável por enviar os documentos do novo arquivo de \emph{dump} em forma de lotes para o Elasticsearch. A ferramenta utilizada foi o \emph{stream2es}, um precursor do \emph{Logstash}. Ele funciona de várias maneiras e uma delas é através de \emph{streaming} de linhas vindas da \texttt{stdin}.
 
 O que acontece nessa etapa é a descompactação dos documentos em tempo real através do comando \texttt{bzcat}, disponível no Compressor sendo passada para o \emph{stream2es} pela \texttt{stdin}, que então é enviada para o Elasticsearch para indexação.
 
