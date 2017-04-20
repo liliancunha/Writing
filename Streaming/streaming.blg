@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2016/Arch Linux)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: streaming.aux
+The style file: mnras.bst
+Database file #1: str.bib
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Warning--empty publisher in pe93
+You've used 4 entries,
+            2881 wiz_defined-function locations,
+            750 strings with 6670 characters,
+and the built_in function-call counts, 1772 in all, are:
+= -- 140
+> -- 108
+< -- 16
++ -- 54
+- -- 10
+* -- 206
+:= -- 285
+add.period$ -- 0
+call.type$ -- 4
+change.case$ -- 8
+chr.to.int$ -- 4
+cite$ -- 5
+duplicate$ -- 90
+empty$ -- 99
+format.name$ -- 22
+if$ -- 296
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 5
+newline$ -- 25
+num.names$ -- 26
+pop$ -- 27
+preamble$ -- 1
+purify$ -- 16
+quote$ -- 0
+skip$ -- 55
+stack$ -- 0
+substring$ -- 100
+swap$ -- 38
+text.length$ -- 16
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 33
+warning$ -- 1
+while$ -- 30
+width$ -- 0
+write$ -- 51
+(There was 1 warning)
