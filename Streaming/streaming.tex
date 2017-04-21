@@ -240,13 +240,13 @@
 		\label{fig:flip_pairs}
 	\end{figure}
 	
-	\subsection{Can we use pairwise velocity?}
+	\subsection{Relation to radial and tangential components of pairwise velocity}
 	
-	The relative line-of-sight velocity can be related to the radial and tangential pairwise velocity as follows
+	The relative line-of-sight velocity can be broThe relative line-of-sight velocity can be related to the radial and tangential components pairwise velocity as follows
 	\begin{eqnarray} \label{eq:los_vel_equivalence}
 	v_{\mathrm{los}} = \mathrm{sgn}(r_{\parallel}) \left[v_{\mathrm{r}} \cos\theta + v_{\mathrm{T}}\sin\theta\right] \, ,
 	\end{eqnarray}
-	\noindent where $v_{\mathrm{r}}$ and $v_{\mathrm{T}}$ are the radial and tangential components of the pairwise velocity respectively. They are defined as
+	\noindent where $v_{\mathrm{r}}$ and $v_{\mathrm{T}}$ are the radial and tangential components of the pairwise velocity respectively. $\theta = \frac{r_{\parallel}}{r}$. They are defined as
 	\begin{eqnarray}
 	v_{\mathrm{r}} = \left(\mathbf{v}_2 - \mathbf{v}_1\right)\cdot \hat{\mathbf{r}} \, , \\
 	v_{\mathrm{T}} = \mathrm{sgn}(v_{t_z})\, \lvert \mathbf{v}_{\mathrm{t}} \rvert \, , \\
@@ -254,6 +254,7 @@
 	v_{\mathrm{away}} = \left(\mathbf{v}_2 - \mathbf{v}_1\right) \cdot \hat{\mathbf{n}}_{12} \, , \\
 	\mathbf{n}_{12} = \left(\mathbf{r}_2 - \mathbf{r}_1\right) \times \hat{\mathbf{z}} \, .
 	\end{eqnarray}
+	\noindent where $\mathbf{n}_{12}$ is the normal vector to the plane defined by the pairwise vector and the line-of-sight axis, which in this case is the z-axis. $v_{\mathrm{away}$ is the velocity component which is in direction of the normal vector.
 	
 	\begin{figure*}
 		\centering
@@ -261,37 +262,41 @@
 		\caption{Shows the equivalence of relative line-of-sight velocity to the radial and the tangential component of the pairwise velocity as given by Eq.~\ref{eq:los_vel_equivalence}.}
 		\label{fig:los_relation}
 	\end{figure*}
+	\subsubsection{First cumulant}
 	
-	On averaging Eq.~\ref{eq:los_vel_equivalence}, we see that 
+	To see how the first cumulant of relative line-of-sight velocity is connected to raw moments of the radial and tangential components, we need to average Eq.~\ref{eq:los_vel_equivalence}. On averaging, we obtain the following 
 	\begin{eqnarray}
 		\left\langle v_{\mathrm{los}}\right\rangle = \mathrm{sgn}(r_{\parallel}) \left[\left\langle v_{\mathrm{r}}\right\rangle \cos\theta + \langle v_{\mathrm{T}}\rangle\sin\theta\right] \, .
 	\end{eqnarray}
-	\noindent However due to isotropy, $\langle v_{\mathrm{T}}\rangle = 0$. Mean of the relative line-of-sight velocity is then
+	\noindent However due to isotropy $\langle v_{\mathrm{T}}\rangle = 0$, implying the contribution to the mean from the tangential component vanishes. Mean of the relative line-of-sight velocity is then
 	\begin{eqnarray}\label{eq:v1}
 		\left\langle v_{\mathrm{los}}\right\rangle = \mathrm{sgn}(r_{\parallel}) \left[\left\langle v_{\mathrm{r}}\right\rangle \cos\theta \right] \, .
 	\end{eqnarray}	
-	
+	\subsubsection{Second cumulant}
+	The second cumulant of the relative line-of-sight velocity is related to its raw moments through
+	\begin{eqnarray}
+		\sigma^2_{\mathrm{los}} =  \left\langle v^2_{\mathrm{los}} \right\rangle - \left\langle v_{\mathrm{los}} \right\rangle^2 
+	\end{eqnarray}
+	\noindent where we already know the form of $\left\langle v_{\mathrm{los}} \right\rangle$. $\left\langle v^2_{\mathrm{los}} \right\rangle$ can be obtained by first squaring Eq.~\ref{eq:los_vel_equivalence} and then averaging it as below
 	\begin{eqnarray}\label{eq:v2}
 		\left\langle v^2_{\mathrm{los}} \right\rangle = \left\langle v^2_{\mathrm{r}}\right\rangle \cos^2\theta + \left\langle v^2_{\mathrm{T}}\right\rangle\sin^2\theta \, ,
 	\end{eqnarray}
+	
+	\noindent where we have used $\left\langle v_{\mathrm{r}} v_{\mathrm{T}}\right\rangle$ = 0. This has indeed been checked from the simulation and assured that this condition holds. In fact any term involving averaging of odd power of $v_{\mathrm{T}}$ disappears due to the isotropy.  The second cumulant is then given as 
 	\begin{eqnarray}
-		\left\langle v^2_{\mathrm{los}} \right\rangle = \left\langle v^2_{\mathrm{r}}\right\rangle \cos^2\theta + \left\langle v^2_{\mathrm{T}}\right\rangle\sin^2\theta \, ,
-	\end{eqnarray}	
-	\noindent where we have used $\left\langle v_{\mathrm{r}} v_{\mathrm{T}}\right\rangle$ = 0. This has indeed been checked from the simulation and assured that this holds. In fact any term involving averaging of odd power of $v_{\mathrm{T}}$ disappears due to the isotropy.  The second cumulant is then given as 
-	\begin{eqnarray}
-		\sigma^2_{\mathrm{los}} = & \left\langle v^2_{\mathrm{los}} \right\rangle - \left\langle v_{\mathrm{los}} \right\rangle^2 \\
-		= &  \sigma^2_{\mathrm{r}} \cos^2\theta + \sigma^2_{\mathrm{T}} \sin^2\theta
+		\sigma^2_{\mathrm{los}} =  \sigma^2_{\mathrm{r}} \cos^2\theta + \sigma^2_{\mathrm{T}} \sin^2\theta
 	\end{eqnarray}
 	\noindent where $\sigma^2_{\mathrm{r}} = \left\langle v^2_{\mathrm{r}} \right\rangle - \left\langle v_{\mathrm{r}}\right\rangle^2$ and $\sigma^2_{\mathrm{T}} = \left\langle v^2_{\mathrm{T}} \right\rangle$. 
-	
-	\begin{eqnarray}\label{eq:v3}
-		\left\langle v^3_{\mathrm{los}} \right\rangle = \left\langle v^3_{\mathrm{r}}\right\rangle \cos^3\theta + 3 \left\langle  v_{\mathrm{r}}v^2_{\mathrm{T}}\right\rangle\cos\theta\sin^2\theta \, ,
-	\end{eqnarray}
-	\noindent The third cumulant of the relative line-of-sight velocity is defined as
-	\begin{eqnarray}
+	\subsubsection{Third cumulant}
+	\noindent The third cumulant of the relative line-of-sight velocity is connected to its raw moments as
+	\begin{eqnarray}\label{eq:third_c}
 		\gamma_{\mathrm{los}} = & \left\langle v^3_{\mathrm{los}} \right\rangle - 3 \left\langle v^2_{\mathrm{los}} \right\rangle \left\langle v_{\mathrm{los}}\right\rangle  + 2 \left\langle v_{\mathrm{los}}\right\rangle^3 
+	\end{eqnarray}
+	The form of $\left\langle v^3_{\mathrm{los}} \right\rangle$ can be obtained trivially by cubing Eq.~\ref{eq:los_vel_equivalence} and averaging it thereafter as below
+	\begin{eqnarray}\label{eq:v3}
+	\left\langle v^3_{\mathrm{los}} \right\rangle = \left\langle v^3_{\mathrm{r}}\right\rangle \cos^3\theta + 3 \left\langle  v_{\mathrm{r}}v^2_{\mathrm{T}}\right\rangle\cos\theta\sin^2\theta \, ,
 	\end{eqnarray}	
-	\noindent Using Eqs.~\ref{eq:v1}, \ref{eq:v2} and \ref{eq:v3}, it can be rewritten as
+	\noindent It should be noted that following the isotropy argument again, $\left\langle  v^2_{\mathrm{r}}v_{\mathrm{T}}\right\rangle = \left\langle v^3_{\mathrm{T}}\right\rangle = 0$. This also has been verified from the simulations. Using Eqs.~\ref{eq:v1}, \ref{eq:v2} and \ref{eq:v3}, Eq.~\ref{eq:third_c} can be rewritten as
 	\begin{multline}
 		\gamma_{\mathrm{los}} = \mathrm{sgn}(r_{\parallel}) \left(\cos^3\theta\left[\left\langle v^3_{\mathrm{r}} \right\rangle - 3 \left\langle v^2_{\mathrm{r}} \right\rangle \left\langle v_{\mathrm{r}}\right\rangle  + 2 \left\langle v_{\mathrm{r}}\right\rangle^3\right] + \right.\\
 		\left. 3\cos\theta\sin^2\theta \left[\left\langle  v_{\mathrm{r}}v^2_{\mathrm{T}}\right\rangle - \left\langle  v_{\mathrm{r}}\right\rangle \left\langle v^2_{\mathrm{T}}\right\rangle\right]\right)
