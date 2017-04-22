@@ -17,6 +17,12 @@
   {mn@eprint@\@tempb}{\@tempb:\@tempc}{\expandafter \expandafter \csname
   mn@eprint@\@tempb\endcsname \expandafter{\@tempc}}}
 
+\bibitem[\protect\citeauthoryear{{Bianchi}, {Percival}  \& {Bel}}{{Bianchi}
+  et~al.}{2016}]{bi2}
+{Bianchi} D.,  {Percival} W.~J.,   {Bel} J.,  2016, \mn@doi [\mnras]
+  {10.1093/mnras/stw2243}, \href
+  {http://adsabs.harvard.edu/abs/2016MNRAS.463.3783B} {463, 3783}
+
 \bibitem[\protect\citeauthoryear{{Fisher}}{{Fisher}}{1995}]{fi95}
 {Fisher} K.~B.,  1995, \mn@doi [\apj] {10.1086/175980}, \href
   {http://adsabs.harvard.edu/abs/1995ApJ...448..494F} {448, 494}
@@ -32,6 +38,12 @@
 \bibitem[\protect\citeauthoryear{{Scoccimarro}}{{Scoccimarro}}{2004}]{sc04}
 {Scoccimarro} R.,  2004, \mn@doi [\prd] {10.1103/PhysRevD.70.083007}, \href
   {http://adsabs.harvard.edu/abs/2004PhRvD..70h3007S} {70, 083007}
+
+\bibitem[\protect\citeauthoryear{{Uhlemann}, {Kopp}  \& {Haugg}}{{Uhlemann}
+  et~al.}{2015}]{uh15}
+{Uhlemann} C.,  {Kopp} M.,   {Haugg} T.,  2015, \mn@doi [\prd]
+  {10.1103/PhysRevD.92.063004}, \href
+  {http://adsabs.harvard.edu/abs/2015PhRvD..92f3004U} {92, 063004}
 
 \makeatother
 \end{thebibliography}

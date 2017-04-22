@@ -112,6 +112,7 @@
 	
 	\section{N-Body Simulations}
 	
+	The subsequent work in this paper was done fully using simulations. For this purpose, we use a dark matter (DM) only simulation from Pillepich 08. It was run using a lean version of \emph{GADGET-2} (cite springel). The simulation box with a length scale of 1200 $h^{-1} \mathrm{Mpc}$ had 1024$^3$ particles. Each DM particle in turn had a mass of $1.246 \times 10^{11} h^{-1} \mathrm{Mpc}$. The structure formation was evolved using the parameters from WMAP5 cosmology (cite komatsu). 
 	\section{Streaming equation}
 	
 	Peculiar velocity distorts the true isotropic spatial distribution. Anisotropy in the spatial distribution introduced by the line-of-sight component of the peculiar velocity can be quantified in the configuration space by the 2-point correlation function. Fig~\ref{fig:mi_corr} shows the isotropic nature of the correlation function in the real-space and the anisotropy introduced by the peculiar velocity in the redshift-space. The interesting objective now is knowing the real-space isotropic correlation function, how can we obtain the anisotropic redshift-space correlation function. One of the ways to model this is to use the streaming equation.
@@ -166,7 +167,7 @@
 	\begin{figure*}
 		\centering
 		\includegraphics[scale=0.29]{los_moments}
-		\caption{Characterising the relative line-of-sight velocity distribution. First panel on left shows the mean relative velocity, followed by the velocity dispersion. The third and the fourth panels shows the standardised moments skewness and kurtosis respectively. Skewness is a measure of the symmetry of the distribution while kurtosis acts as a measure of the tailedness of the distribution}
+		\caption{Characterising the relative line-of-sight velocity distribution. First panel on left shows the mean relative velocity, followed by the velocity dispersion. The third and the fourth panels shows the standardised moments skewness and kurtosis respectively. Skewness is a measure of the symmetry of the distribution while kurtosis acts as a measure of the tailedness of the distribution.}
 		\label{fig:moments_2d}
 	\end{figure*}
 	
@@ -175,7 +176,7 @@
 	\begin{figure}
 		\centering
 		\includegraphics[scale=0.7]{uncorrectedvstrue}
-		\caption{Uncorrected}
+		\caption{When one compares Eq.~\ref{eq:old_streaming} which is quoted as the exact equation against the ``true'' correlation function computed from the simulations, it can be seen that they are not exact. The formalism given in Eq.~\ref{eq:old_streaming} leads to an undermined value.}
 		\label{fig:old_str}
 	\end{figure}
 	
@@ -208,20 +209,21 @@
 	P_{v_{\mathrm{los}}}\left(s_{\parallel} - r_{\parallel} \mid r_{\parallel}, r_{\perp}\right) \dif r_{\parallel} \, .
 	\end{multline}
 	
-	\noindent  Fig.~\ref{fig:new_str} shows the corrected streaming equation (Eq.~\ref{eq:streaming_break}) compared with the simulation. One can clearly see that with the complete knowledge of the relative line-of-sight velocity distribution and with the correction to account for the pairs which have flipped, we are able to reproduce the true redshift space correlation function accurately.
+	\noindent  Fig.~\ref{fig:new_str} shows the corrected streaming equation (Eq.~\ref{eq:streaming_break}) compared with the simulation.
+	
 	
 	\begin{figure}
 		\centering
-		\includegraphics[scale=0.7]{correctedvstrue}
+		\includegraphics[scale=0.72]{correctedvstrue}
 		\caption{Corrected streaming equation compared with the simulation. Orange line denotes the correlation function obtained using the corrected streaming equation(Eq.~\ref{eq:streaming_break}) and black dashed line denotes to the redshift space correlation function measured directly from simulation.}
 		\label{fig:new_str}
 	\end{figure}
-	\begin{figure}
+	\begin{figure*}
 		\centering
-		\includegraphics[scale=0.525]{consistency}
+		\includegraphics[scale=0.85]{consistency}
 		\caption{Consistency check for the streaming equation. Top panel: Shows the number of pairs in redshift-space for particular $s_{\parallel}$ and $s_{\perp}$. $r_{\parallel}$ is obtained as $s_{\parallel} - v_{\parallel}$. Bottom panel: Shows the integrand distribution of the streaming equations at same $s_{\parallel}$ and $s_{\perp}$ as top panel. Due to using the wrong argument of the PDF in the uncorrected integrand, the final value will be undermined compared to the true value.}
 		\label{fig:consistency1}
-	\end{figure}
+	\end{figure*}
 	
 	\begin{figure}
 		\centering
@@ -230,31 +232,48 @@
 		\label{fig:consistency2}
 	\end{figure}
 	
-	It is interesting to note that the integral runs from -$\infty$ to +$\infty$. So what does the negative $r_{\parallel}$ mean in the context of streaming model? It means that if we are to take the redshift space to be our reference frame, the negative $r_{\parallel}$ implies pairs which have flipped their position compared to their redshift space counterparts. Fig.~\ref{fig:flip_pairs} clearly demonstrates this where the negative $r_{\parallel}$ is the distance between the pairs which have flipped their position in real-space as compared to the position in redshift-space. It should be noted again that the redshift-space distortions is purely a line-of-sight effect, hence the perpendicular distance between the pairs remains unchanged.
+	It is interesting to note that the integral runs from -$\infty$ to +$\infty$. So what does the negative $r_{\parallel}$ mean in the context of streaming model? It means that if we are to take the redshift space to be our reference frame, the negative $r_{\parallel}$ implies pairs which have flipped their position compared to their redshift space counterparts. Fig.~\ref{fig:flip_pairs} clearly demonstrates this where the negative $r_{\parallel}$ is the distance between the pairs which have flipped their position in real-space as compared to the position in redshift-space. This is due to the large relative in-fall velocity of the pairs.It should be noted again that the redshift-space distortions is purely a line-of-sight effect, hence the perpendicular distance between the pairs remains unchanged.
 	
-	
+	 One can clearly see that with the complete knowledge of the relative line-of-sight velocity distribution and with the correction to account for the pairs which have flipped, we are able to reproduce the true redshift space correlation function accurately. To understand bit more on why there is a need to account for the pair flips and as a consistency check measure, we look at Fig.~\ref{fig:consistency1}. The figure looks at a particular length scale in redshift-space, in this case $s_{\parallel} = 10.5 \,h^{-1}\mathrm{Mpc}$ and $s_{\perp} = 1.5\,h^{-1}\mathrm{Mpc}$. It is quite interesting to note that the plot features two distinct distributions. The first distribution which peaks around $r_{\parallel} = 0$ corresponds to pairs which are in a high density region. These are the pairs which have a large relative velocity and amongst these some undergo pair flips ($r_{\parallel} < 0$). So we can understand that for pairs in a high density region, it is equally likely to undergo pair flips as compared to pairs that do not. The second distribution in the plot peaks around $s_{\parallel} = r_{\parallel}$, these are mainly pairs which are moving away from each other according to Hubble flow (since $v_{\parallel}=0$). In a sense, by looking at the redshift-space distortion effect like this, we are able to disentangle the linear and non-linear effects. To be concise, the distribution around $r_{\parallel} = 0$ is what causes the FoG effect while the distribution around $s_{\parallel} = r_{\parallel}$ causes the Kaiser effect. The bottom panel of Fig.~\ref{fig:consistency1}, shows how the integrand of the streaming equation looks like for a particular length scale in redshift-space. This panel acts as a consistency check and we can understand in a clearer way why the streaming equation would undermine the correlation function if the pair flips are unaccounted for. Due to the asymmetric nature of the velocity distribution, it is essential to pick the argument of the velocity distribution with the right parity. Otherwise we end up neglecting the flipped pairs.
+	 
+	 We do the same exercise for a larger scale in Fig~\ref{fig:consistency2} and see that both formulations are equivalent since at large scales, we do not expect to see FoG effect and subsequently no pair flips. At these scales we only see one distribution which again peaks around $s_{\parallel} = r_{\parallel}$, telling us that most of the pairs are moving away from each other according to Hubble flow. So we can understand that these corrections are essential if we need to accurately model RSD at scales of $s<20  \,h^{-1}\mathrm{Mpc}$. For large scales, both the formulations will be equivalent.
+	 
 	\begin{figure}
 		\centering
-		\includegraphics[scale=0.8]{flipped_pairs}
-		\caption{Flipped pairs}
+		\includegraphics[scale=0.6]{RSD_nonlin1}
+		\caption{Pair flips happening due to the ``Finger-of-God'' effect which is a non-linear effect. In this figure, we take the redshift-space as our reference frame. In that framework, objects 1 and 3 here then represent the flipped pairs in real-space. Pair flips are a result of the high relative in-fall velocity of these pairs at non-linear scales.}
 		\label{fig:flip_pairs}
 	\end{figure}
 	
 	\subsection{Relation to radial and tangential components of pairwise velocity}
 	
-	The relative line-of-sight velocity can be broThe relative line-of-sight velocity can be related to the radial and tangential components pairwise velocity as follows
+	It is of interest to see how the relative line-of-sight velocity is connected to the radial and tangential components of the pairwise velocity. The radial component is defined as the component which is along the separation vector, which can be mathematically written as
+	\begin{eqnarray}	
+	v_{\mathrm{r}} = \left(\mathbf{v}_2 - \mathbf{v}_1\right)\cdot \hat{\mathbf{r}} \, .
+	\end{eqnarray}
+	However before we define the tangential component we will need to introduce few other terms as follows
+	\begin{eqnarray}
+		\mathbf{n}_{12} = \left(\mathbf{r}_2 - \mathbf{r}_1\right) \times \hat{\mathbf{z}} \, ,
+	\end{eqnarray}	
+	\noindent where $\mathbf{n}_{12}$ is the normal vector to the plane defined by the pairwise vector and the line-of-sight axis, which in this case is the z-axis. 
+	\begin{eqnarray}
+	v_{\mathrm{away}} = \left(\mathbf{v}_2 - \mathbf{v}_1\right) \cdot \hat{\mathbf{n}}_{12} \, ,
+	\end{eqnarray}	
+	\noindent where $v_{\mathrm{away}}$ is the velocity component which is in direction of the normal vector away from the plane. Knowing these quantities, we can define the tangential velocity vector as follows
+	\begin{eqnarray}
+	\mathbf{v}_{\mathrm{t}} = \left(\mathbf{v}_2 - \mathbf{v}_1\right) - (v_{\mathrm{r}}\cdot \hat{\mathbf{r}}) - (v_{\mathrm{away}} \cdot \hat{\mathbf{n}}_{12}) \, .		
+	\end{eqnarray}
+	\noindent However we are interested in the magnitude of the tangential component which we define as
+	\begin{eqnarray}
+		v_{\mathrm{T}} = \mathrm{sgn}(v_{t_z})\, \lvert \mathbf{v}_{\mathrm{t}} \rvert \, .
+	\end{eqnarray}
+	
+	 The relative line-of-sight velocity can then be related to the radial and tangential components pairwise velocity as follows
 	\begin{eqnarray} \label{eq:los_vel_equivalence}
 	v_{\mathrm{los}} = \mathrm{sgn}(r_{\parallel}) \left[v_{\mathrm{r}} \cos\theta + v_{\mathrm{T}}\sin\theta\right] \, ,
 	\end{eqnarray}
-	\noindent where $v_{\mathrm{r}}$ and $v_{\mathrm{T}}$ are the radial and tangential components of the pairwise velocity respectively. $\theta = \frac{r_{\parallel}}{r}$. They are defined as
-	\begin{eqnarray}
-	v_{\mathrm{r}} = \left(\mathbf{v}_2 - \mathbf{v}_1\right)\cdot \hat{\mathbf{r}} \, , \\
-	v_{\mathrm{T}} = \mathrm{sgn}(v_{t_z})\, \lvert \mathbf{v}_{\mathrm{t}} \rvert \, , \\
-	\mathbf{v}_{\mathrm{t}} = \left(\mathbf{v}_2 - \mathbf{v}_1\right) - (v_{\mathrm{r}}\cdot \hat{\mathbf{r}}) - (v_{\mathrm{away}} \cdot \hat{\mathbf{n}}_{12}) \, , \\
-	v_{\mathrm{away}} = \left(\mathbf{v}_2 - \mathbf{v}_1\right) \cdot \hat{\mathbf{n}}_{12} \, , \\
-	\mathbf{n}_{12} = \left(\mathbf{r}_2 - \mathbf{r}_1\right) \times \hat{\mathbf{z}} \, .
-	\end{eqnarray}
-	\noindent where $\mathbf{n}_{12}$ is the normal vector to the plane defined by the pairwise vector and the line-of-sight axis, which in this case is the z-axis. $v_{\mathrm{away}$ is the velocity component which is in direction of the normal vector.
+	\noindent where $\cos\theta = r_{\parallel}/r$. Fig.~\ref{fig:los_relation} shows that the equivalence of Eq.~\ref{eq:los_vel_equivalence} indeed holds true. Thus it is exact. As we know exactly how to go from one formulation to another, it would be interesting to how they are related to each other statistically, namely we show the first three cumulants and how they are related to each other in the coming subsections.
+
 	
 	\begin{figure*}
 		\centering
@@ -272,6 +291,8 @@
 	\begin{eqnarray}\label{eq:v1}
 		\left\langle v_{\mathrm{los}}\right\rangle = \mathrm{sgn}(r_{\parallel}) \left[\left\langle v_{\mathrm{r}}\right\rangle \cos\theta \right] \, .
 	\end{eqnarray}	
+	
+	\noindent The presence of $ \mathrm{sgn}(r_{\parallel}) $ term is essential as it ensures that $\left\langle v_{\mathrm{los}}(-r_{\parallel},r_{\perp})\right\rangle = \left\langle v_{\mathrm{los}}(r_{\parallel},r_{\perp})\right\rangle$, which we have verified from the simulations. 
 	\subsubsection{Second cumulant}
 	The second cumulant of the relative line-of-sight velocity is related to its raw moments through
 	\begin{eqnarray}
@@ -304,7 +325,7 @@
 	\begin{eqnarray}
 		\gamma_{\mathrm{los}} = \mathrm{sgn}(r_{\parallel}) \cos\theta \left(\cos^2\theta \,\gamma_{\mathrm{r}} + 3\sin^2\theta \,\mathrm{Cov}\left[v_{\mathrm{r}},v^2_{\mathrm{T}}\right] \right)
 	\end{eqnarray}
-	\noindent Thus we see that the third cumulant of the relative line-of-sight velocity not only depends on the third cumulant of the radial component of the pairwise velocity but also covariance between the radial and square of the tangential component of the pairwise velocity.
+	\noindent Thus we see that the third cumulant of the relative line-of-sight velocity not only depends on the third cumulant of the radial component of the pairwise velocity but also the covariance between the radial and square of the tangential component of the pairwise velocity. This is similar to the form as mentioned in \citealt{uh15} and \citealt{bi2}, however we have explicitly derived the form and show the equivalence in 
 	\section{Phenomenological Model}
 	
 	GH is the mixture modelling consisting of normal distribution and Generalised Inverse Gaussian distribution. It is similar to modelling pairwise velocity as mixture of the normal and log-normal density (see tinker). GIG and log-normal are very similar. Try to connect them and see. Density weighted velocity, so would make sense to connect them. Could explain why we use it and why they could be the true distribution/
