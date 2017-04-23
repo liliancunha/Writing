@@ -292,7 +292,7 @@
 		\left\langle v_{\mathrm{los}}\right\rangle = \mathrm{sgn}(r_{\parallel}) \left[\left\langle v_{\mathrm{r}}\right\rangle \cos\theta \right] \, .
 	\end{eqnarray}	
 	
-	\noindent The presence of $ \mathrm{sgn}(r_{\parallel}) $ term is essential as it ensures that $\left\langle v_{\mathrm{los}}(-r_{\parallel},r_{\perp})\right\rangle = \left\langle v_{\mathrm{los}}(r_{\parallel},r_{\perp})\right\rangle$, which we have verified from the simulations. 
+	\noindent The presence of $ \mathrm{sgn}(r_{\parallel}) $ term is essential as it ensures that $\left\langle v_{\mathrm{los}}(-r_{\parallel},r_{\perp})\right\rangle = \left\langle v_{\mathrm{los}}(r_{\parallel},r_{\perp})\right\rangle$, which we have verified from the simulations. In Fig.~\ref{fig:cumulants}, we show the equivalence of Eq.~\ref{eq:v1} and show that they are equivalent.
 	\subsubsection{Second cumulant}
 	The second cumulant of the relative line-of-sight velocity is related to its raw moments through
 	\begin{eqnarray}
@@ -304,10 +304,10 @@
 	\end{eqnarray}
 	
 	\noindent where we have used $\left\langle v_{\mathrm{r}} v_{\mathrm{T}}\right\rangle$ = 0. This has indeed been checked from the simulation and assured that this condition holds. In fact any term involving averaging of odd power of $v_{\mathrm{T}}$ disappears due to the isotropy.  The second cumulant is then given as 
-	\begin{eqnarray}
+	\begin{eqnarray}\label{eq:c2}
 		\sigma^2_{\mathrm{los}} =  \sigma^2_{\mathrm{r}} \cos^2\theta + \sigma^2_{\mathrm{T}} \sin^2\theta
 	\end{eqnarray}
-	\noindent where $\sigma^2_{\mathrm{r}} = \left\langle v^2_{\mathrm{r}} \right\rangle - \left\langle v_{\mathrm{r}}\right\rangle^2$ and $\sigma^2_{\mathrm{T}} = \left\langle v^2_{\mathrm{T}} \right\rangle$. 
+	\noindent where $\sigma^2_{\mathrm{r}} = \left\langle v^2_{\mathrm{r}} \right\rangle - \left\langle v_{\mathrm{r}}\right\rangle^2$ and $\sigma^2_{\mathrm{T}} = \left\langle v^2_{\mathrm{T}} \right\rangle$. We show that the Eq.~\ref{eq:c2} is indeed exact in Fig.~\ref{fig:cumulants}.
 	\subsubsection{Third cumulant}
 	\noindent The third cumulant of the relative line-of-sight velocity is connected to its raw moments as
 	\begin{eqnarray}\label{eq:third_c}
@@ -322,10 +322,18 @@
 		\gamma_{\mathrm{los}} = \mathrm{sgn}(r_{\parallel}) \left(\cos^3\theta\left[\left\langle v^3_{\mathrm{r}} \right\rangle - 3 \left\langle v^2_{\mathrm{r}} \right\rangle \left\langle v_{\mathrm{r}}\right\rangle  + 2 \left\langle v_{\mathrm{r}}\right\rangle^3\right] + \right.\\
 		\left. 3\cos\theta\sin^2\theta \left[\left\langle  v_{\mathrm{r}}v^2_{\mathrm{T}}\right\rangle - \left\langle  v_{\mathrm{r}}\right\rangle \left\langle v^2_{\mathrm{T}}\right\rangle\right]\right)
 	\end{multline}
-	\begin{eqnarray}
+	\begin{eqnarray}\label{eq:c3}
 		\gamma_{\mathrm{los}} = \mathrm{sgn}(r_{\parallel}) \cos\theta \left(\cos^2\theta \,\gamma_{\mathrm{r}} + 3\sin^2\theta \,\mathrm{Cov}\left[v_{\mathrm{r}},v^2_{\mathrm{T}}\right] \right)
 	\end{eqnarray}
-	\noindent Thus we see that the third cumulant of the relative line-of-sight velocity not only depends on the third cumulant of the radial component of the pairwise velocity but also the covariance between the radial and square of the tangential component of the pairwise velocity. This is similar to the form as mentioned in \citealt{uh15} and \citealt{bi2}, however we have explicitly derived the form and show the equivalence in 
+	\noindent Thus we see that the third cumulant of the relative line-of-sight velocity not only depends on the third cumulant of the radial component of the pairwise velocity but also the covariance between the radial and square of the tangential component of the pairwise velocity. This is similar to the form as mentioned in \citealt{uh15} and \citealt{bi2}, however we have explicitly derived the form and show the equivalence in Fig.~\ref{fig:cumulants}.
+	
+	\begin{figure*}
+	\centering
+	\includegraphics[scale=0.7]{cumulants}
+	\caption{Checking the equivalence of the cumulants as shown in Eqs.~\ref{eq:v1}, \ref{eq:c2} and \ref{eq:c3}}
+	\label{fig:cumulants}
+\end{figure*}
+	
 	\section{Phenomenological Model}
 	
 	GH is the mixture modelling consisting of normal distribution and Generalised Inverse Gaussian distribution. It is similar to modelling pairwise velocity as mixture of the normal and log-normal density (see tinker). GIG and log-normal are very similar. Try to connect them and see. Density weighted velocity, so would make sense to connect them. Could explain why we use it and why they could be the true distribution/
