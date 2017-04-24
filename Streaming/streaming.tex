@@ -110,6 +110,8 @@
 	
 	Redshift-space distortions -- growth rate -- Aim of the paper -- Section 2 -- Section 3 
 	
+	
+	
 	\section{N-Body Simulations}
 	
 	The subsequent work in this paper was done fully using simulations. For this purpose, we use a dark matter (DM) only simulation from Pillepich 08. It was run using a lean version of \emph{GADGET-2} (cite springel). The simulation box with a length scale of 1200 $h^{-1} \mathrm{Mpc}$ had 1024$^3$ particles. Each DM particle in turn had a mass of $1.246 \times 10^{11} h^{-1} \mathrm{Mpc}$. The structure formation was evolved using the parameters from WMAP5 cosmology (cite komatsu). 
@@ -144,7 +146,7 @@
 	
 	\begin{figure*}
 		\centering
-		\includegraphics[scale=1]{rel_los_grid}
+		\includegraphics[scale=0.88]{rel_los_grid}
 		\caption{Relative line-of-sight velocity distribution. The distance mentioned in each subplot refers to the mean value of each bin, having a bin width of 1 $h^{-1}$ Mpc.}
 		\label{fig:rel_los}
 	\end{figure*}
@@ -334,21 +336,19 @@
 	\label{fig:cumulants}
 \end{figure*}
 	
-	\section{Phenomenological Model}
-	
-	GH is the mixture modelling consisting of normal distribution and Generalised Inverse Gaussian distribution. It is similar to modelling pairwise velocity as mixture of the normal and log-normal density (see tinker). GIG and log-normal are very similar. Try to connect them and see. Density weighted velocity, so would make sense to connect them. Could explain why we use it and why they could be the true distribution/
 	\section{Dissecting Velocity Distribution}
 	
-	To model accurately model the relative line-of-sight velocity distribution, it is important to understand how each component plays a role in the distribution. For this purpose, we classify the dark matter particles as either `halo' particles or `field' particle. This was done with the help of ROCKSTAR halo finder. Particles which were identified to belong to the halos were subsequently classified as `halo' particles and the rest as `field' particles.  
+	To have a better understanding of the relative line-of-sight velocity distribution, it is important to know how halo and non-halo particles plays a role in the distribution. For this purpose, we classify the dark matter particles as either `halo' particles or `field' particle. This was done with the help of ROCKSTAR halo finder. Particles which were identified to belong to a halo were subsequently classified as `halo' particles and the rest as `field' particles.  
 	
-	Fig~\ref{fig:rel_los_comp} shows the result of how the components contribute to the total distribution. At the very small scales as seen in the case of mean distance of $r_{\perp} = r_{\parallel} = 0.5 h^{-1}$ Mpc, the distribution is powered by the halo-halo particle pairs. This is not surprising as at these scales, we expect the pairs to be mostly in halos. As the pair separation increases however, the field-field component seems to be the dominant factor especially at the peaks of the distribution. The mean infalling velocity hence seems to be driven by the field-field particle pairs. The narrow wings of the field-field component suggests that the pairs are which does not belong to halos undergo coherent motion. The wings of the total distribution are contributed by both the halo-halo and the field-halo pairs. This clearly shows how the non-Gaussian nature of the relative line-of-sight velocity distribution for the full DM particles arises from the combined effect of the field and halo particles. 
+	Fig~\ref{fig:rel_los_comp} shows the result of how the components contribute to the total distribution. At the very small scales as seen in the case of mean distance of $r_{\perp} = r_{\parallel} = 0.5 h^{-1}$ Mpc, the distribution is powered by the halo-halo particle pairs. This is not surprising as at these scales, we expect the pairs to be mostly in halos. As the pair separation increases however, the field-field component seems to be the dominant factor especially at the peaks of the distribution. The mean infalling velocity hence seems to be driven by the field-field particle pairs. However it should be noted that halo-halo pairs have a more negative in-fall velocity compared to the field pairs. Narrow wings of the field-field component indicates that the pairs  which does not belong to halos mostly undergo coherent motion. The wings of the total distribution are contributed by both the halo-halo and the field-halo pairs. This clearly shows how the non-Gaussian nature of the relative line-of-sight velocity distribution for the full DM particles arises from the combined effect of the field and halo particles. 
 	
-	red
+	Similarly we can dissect the halo-halo PDF into halo mass subsamples. Fig~\ref{fig:rel_los_mass_comp} shows the contribution from each 
+	
 	
 	\begin{figure*}
 		\centering
-		\includegraphics[scale=0.9]{rel_los_components}
-		\caption{Relative line-of-sight velocity distribution for different components. Green dashed line refers to the pairs which are comprised of 2 halo particles, blue dash dotted line refers to the pair which are formed by 2 field particles and finally magenta dotted line showcases the distribution contributed by pairs in which one of the particle is a field particle and the other a halo particle. The distribution of the full particles is shown using the red solid line. The distance mentioned in each subplot refers to the mean value of each bin, having a bin width of 1 $h^{-1}$ Mpc.}
+		\includegraphics[scale=0.8]{rel_los_components}
+		\caption{Relative line-of-sight velocity distribution for different components normalised to full PDF. Green dashed line refers to the pairs which are comprised of 2 halo particles, blue dash dotted line refers to the pair which are formed by 2 field particles and finally magenta dotted line showcases the distribution contributed by pairs in which one of the particle is a field particle and the other a halo particle. The distribution of the full particles is shown using the red solid line. The distance mentioned in each subplot refers to the mean value of each bin, having a bin width of 1 $h^{-1}$ Mpc.}
 		\label{fig:rel_los_comp}
 	\end{figure*}
 	
@@ -364,10 +364,14 @@
 %	
 	\begin{figure*}
 		\centering
-		\includegraphics[scale=0.9]{rel_los_mass_components}
+		\includegraphics[scale=0.75]{rel_los_mass_components}
 		\caption{Relative line-of-sight velocity distribution for different components. Green dashed line refers to the pairs which are comprised of 2 halo particles, blue dash dotted line refers to the pair which are formed by 2 field particles and finally magenta dotted line showcases the distribution contributed by pairs in which one of the particle is a field particle and the other a halo particle. The distribution of the full particles is shown using the red solid line. The distance mentioned in each subplot refers to the mean value of each bin, having a bin width of 1 $h^{-1}$ Mpc.}
 		\label{fig:rel_los_mass_comp}
 	\end{figure*}
+
+	\section{Phenomenological Model}
+
+	GH is the mixture modelling consisting of normal distribution and Generalised Inverse Gaussian distribution. It is similar to modelling pairwise velocity as mixture of the normal and log-normal density (see tinker). GIG and log-normal are very similar. Try to connect them and see. Density weighted velocity, so would make sense to connect them. Could explain why we use it and why they could be the true distribution.
 	
 	\section{Conclusions}
 	
