@@ -370,7 +370,18 @@
 
 	\section{Phenomenological Model}
 
-	In prior sections, we showed the validity of the streaming equation and how different components. However we would like to have a phenomenological model to describe the relative line-of-sight velocity and use that in the streaming equation. GH is the mixture modelling consisting of normal distribution and Generalised Inverse Gaussian distribution. It is similar to modelling pairwise velocity as mixture of the normal and log-normal density (see tinker). GIG and log-normal are very similar. Try to connect them and see. Density weighted velocity, so would make sense to connect them. Could explain why we use it and why they could be the true distribution.
+	In prior sections, we showed the validity of the streaming equation and how different components contribute to the distribution. However we would like to have a phenomenological model to describe the relative line-of-sight velocity and use that in the streaming equation. Looking into the literature for semi-heavy tailed distribution, we were able to use generalised hyperbolic distribution to model the relative line-of-sight velocity PDF. The distribution can be characterised as
+	
+	\begin{multline}
+		f_{\mathrm{GH}}(x) = C(\lambda, \alpha,\beta,\delta,\mu) \left(\delta^2+\left(x-\mu\right)^2\right)^{\frac{\lambda-1/2}{2}}  \\
+		\exp\left(\beta\left(x-\mu\right)\right) K_{\lambda-\frac{1}{2}}\left(\alpha\sqrt{\delta^2+(x-\mu)^2}\right) \, ,
+	\end{multline}
+	\noindent where $C(\lambda, \alpha,\beta,\delta,\mu)$ is the normalisation term and it is given by
+	\begin{eqnarray}
+		C(\lambda, \alpha,\beta,\delta,\mu) = \frac{\left(\alpha^2-\beta^2\right)^{\frac{\lambda}{2}}}{\sqrt{2\pi}\alpha^{\lambda - 1/2}\delta^\lambda K_{\lambda}\left(\delta\sqrt{\alpha^2-\beta^2}\right)}  \, .
+	\end{eqnarray}
+	
+	GH is the mixture modelling consisting of normal distribution and Generalised Inverse Gaussian distribution. It is similar to modelling pairwise velocity as mixture of the normal and log-normal density (see tinker). GIG and log-normal are very similar. Try to connect them and see. Density weighted velocity, so would make sense to connect them. Could explain why we use it and why they could be the true distribution.
 	
 	\section{Conclusions}
 	
