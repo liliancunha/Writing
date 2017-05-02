@@ -320,11 +320,11 @@
 	\end{eqnarray}	
 	\noindent It should be noted that following the isotropy argument again, $\left\langle  v^2_{\mathrm{r}}v_{\mathrm{T}}\right\rangle = \left\langle v^3_{\mathrm{T}}\right\rangle = 0$. This also has been verified from the simulations. Using Eqs.~\ref{eq:v1}, \ref{eq:v2} and \ref{eq:v3}, Eq.~\ref{eq:third_c} can be rewritten as
 	\begin{multline}
-		\gamma_{\mathrm{los}} = \mathrm{sgn}(r_{\parallel}) \left(\cos^3\theta\left[\left\langle v^3_{\mathrm{r}} \right\rangle - 3 \left\langle v^2_{\mathrm{r}} \right\rangle \left\langle v_{\mathrm{r}}\right\rangle  + 2 \left\langle v_{\mathrm{r}}\right\rangle^3\right] + \right.\\
-		\left. 3\cos\theta\sin^2\theta \left[\left\langle  v_{\mathrm{r}}v^2_{\mathrm{T}}\right\rangle - \left\langle  v_{\mathrm{r}}\right\rangle \left\langle v^2_{\mathrm{T}}\right\rangle\right]\right)
+		\gamma_{\mathrm{los}} = \mathrm{sgn}(r_{\parallel}) \left(\left[\left\langle v^3_{\mathrm{r}} \right\rangle - 3 \left\langle v^2_{\mathrm{r}} \right\rangle \left\langle v_{\mathrm{r}}\right\rangle  + 2 \left\langle v_{\mathrm{r}}\right\rangle^3\right]\cos^3\theta + \right.\\
+		\left. 3 \left[\left\langle  v_{\mathrm{r}}v^2_{\mathrm{T}}\right\rangle - \left\langle  v_{\mathrm{r}}\right\rangle \left\langle v^2_{\mathrm{T}}\right\rangle\right]\cos\theta\sin^2\theta\right)
 	\end{multline}
 	\begin{eqnarray}\label{eq:c3}
-		\gamma_{\mathrm{los}} = \mathrm{sgn}(r_{\parallel}) \cos\theta \left(\cos^2\theta \,\gamma_{\mathrm{r}} + 3\sin^2\theta \,\mathrm{Cov}\left[v_{\mathrm{r}},v^2_{\mathrm{T}}\right] \right)
+		\gamma_{\mathrm{los}} = \mathrm{sgn}(r_{\parallel}) \cos\theta \left(\gamma_{\mathrm{r}}\cos^2\theta  + 3 \mathrm{Cov}\left[v_{\mathrm{r}},v^2_{\mathrm{T}}\right]\sin^2\theta \right)
 	\end{eqnarray}
 	\noindent Thus we see that the third cumulant of the relative line-of-sight velocity not only depends on the third cumulant of the radial component of the pairwise velocity but also the covariance between the radial and square of the tangential component of the pairwise velocity. This is similar to the form as mentioned in \citealt{uh15} and \citealt{bi2}, however we have explicitly derived the form and show the equivalence in Fig.~\ref{fig:cumulants}.
 	
@@ -334,7 +334,18 @@
 	\caption{Checking the equivalence of the cumulants as shown in Eqs.~\ref{eq:v1}, \ref{eq:c2} and \ref{eq:c3}}
 	\label{fig:cumulants}
 \end{figure*}
-	
+	\subsubsection{Fourth cumulant}
+	\begin{eqnarray}
+		\kappa_{\mathrm{los}}  = & \left\langle v^4_{\mathrm{los}}\right\rangle - 4\left\langle v^3_{\mathrm{los}}\right\rangle\ \left\langle v_{\mathrm{los}}\right\rangle - 3\left\langle v^2_{\mathrm{los}}\right\rangle^2 \nonumber \\
+		& + 12\left\langle v^2_{\mathrm{los}}\right\rangle\left\langle v_{\mathrm{los}}\right\rangle^2 - 6\left\langle v_{\mathrm{los}}\right\rangle^4
+	\end{eqnarray}
+	\begin{eqnarray}
+		\left\langle v^4_{\mathrm{los}}\right\rangle = \left\langle v^4_{\mathrm{r}}\right\rangle\cos^4\theta + 6\left\langle v^2_{\mathrm{r}}v^2_{\mathrm{T}}\right\rangle  \cos^2\theta\sin^2\theta + \left\langle v^4_{\mathrm{T}}\right\rangle\sin^4\theta \, ,
+	\end{eqnarray}
+	\begin{multline}
+		\kappa_{\mathrm{los}} = \left[ \left\langle v^4_{\mathrm{r}}\right\rangle - 4\left\langle v^3_{\mathrm{r}}\right\rangle\ \left\langle v_{\mathrm{r}}\right\rangle - 3\left\langle v^2_{\mathrm{r}}\right\rangle^2 + 12\left\langle v^2_{\mathrm{r}}\right\rangle\left\langle v_{\mathrm{r}}\right\rangle^2 - \right.\nonumber\\
+		\left. 6\left\langle v_{\mathrm{r}}\right\rangle^4\right]\cos^4\theta + \left[\left\langle\right\rangle\right]
+	\end{multline}
 	\section{Dissecting Velocity Distribution}
 	
 	To have a better understanding of the relative line-of-sight velocity distribution, it is important to know how halo and non-halo particles plays a role in the distribution. For this purpose, we classify the dark matter particles as either `halo' particles or `field' particle. This was done with the help of ROCKSTAR halo finder. Particles which were identified to belong to a halo were subsequently classified as `halo' particles and the rest as `field' particles.  
@@ -378,10 +389,12 @@
 	\end{multline}
 	\noindent where $C(\lambda, \alpha,\beta,\delta,\mu)$ is the normalisation term and it is given by
 	\begin{eqnarray}
-		C(\lambda, \alpha,\beta,\delta,\mu) = \frac{\left(\alpha^2-\beta^2\right)^{\frac{\lambda}{2}}}{\sqrt{2\pi}\alpha^{\lambda - 1/2}\delta^\lambda K_{\lambda}\left(\delta\sqrt{\alpha^2-\beta^2}\right)}  \, .
+		C(\lambda, \alpha,\beta,\delta,\mu) = \frac{\left(\alpha^2-\beta^2\right)^{\frac{\lambda}{2}}}{\sqrt{2\pi}\alpha^{\lambda - 1/2}\delta^\lambda K_{\lambda}\left(\delta\sqrt{\alpha^2-\beta^2}\right)}  \, ,
 	\end{eqnarray}
 	
-	GH is the mixture modelling consisting of normal distribution and Generalised Inverse Gaussian distribution. It is similar to modelling pairwise velocity as mixture of the normal and log-normal density (see tinker). GIG and log-normal are very similar. Try to connect them and see. Density weighted velocity, so would make sense to connect them. Could explain why we use it and why they could be the true distribution.
+	\noindent where $K_{\lambda}$ is the modified Bessel function of the third kind with index of $\lambda$.
+	
+	GH is the mixture modelling consisting of normal distribution and Generalised Inverse Gaussian distribution. 
 	
 	\section{Conclusions}
 	
