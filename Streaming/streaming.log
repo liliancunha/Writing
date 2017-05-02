@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.4.11)  2 MAY 2017 13:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.4.11)  2 MAY 2017 17:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1162,83 +1162,110 @@ Overfull \hbox (9.06647pt too wide) in paragraph at lines 333--334
  [][] 
  []
 
+<./Figures/fourth_cumulants.pdf, id=703, 355.3275pt x 368.74706pt>
+File: ./Figures/fourth_cumulants.pdf Graphic file (type pdf)
+
+<use ./Figures/fourth_cumulants.pdf>
+Package pdftex.def Info: ./Figures/fourth_cumulants.pdf used on input line 361.
+
+(pdftex.def)             Requested size: 248.72754pt x 258.12117pt.
+
+Overfull \hbox (8.72754pt too wide) in paragraph at lines 361--362
+ [][] 
+ []
+
 [6]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-<./Figures/rel_los_components.pdf, id=733, 642.8977pt x 497.17604pt>
+<./Figures/rel_los_components.pdf, id=739, 642.8977pt x 497.17604pt>
 File: ./Figures/rel_los_components.pdf Graphic file (type pdf)
 
 <use ./Figures/rel_los_components.pdf>
 Package pdftex.def Info: ./Figures/rel_los_components.pdf used on input line 37
-0.
+7.
 (pdftex.def)             Requested size: 514.31886pt x 397.74136pt.
 
-Overfull \hbox (10.31886pt too wide) in paragraph at lines 370--371
+Overfull \hbox (10.31886pt too wide) in paragraph at lines 377--378
  [][] 
  []
 
-<./Figures/rel_los_mass_components.pdf, id=734, 633.2659pt x 614.13443pt>
+<./Figures/rel_los_mass_components.pdf, id=740, 633.2659pt x 614.13443pt>
 File: ./Figures/rel_los_mass_components.pdf Graphic file (type pdf)
 
 <use ./Figures/rel_los_mass_components.pdf>
 Package pdftex.def Info: ./Figures/rel_los_mass_components.pdf used on input li
-ne 387.
+ne 394.
 (pdftex.def)             Requested size: 474.94826pt x 460.5997pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [7pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.395 
+l.402 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.395 
+l.402 
        <./Figures/los_velrelation.pdf> <./Figures/cumulants.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/cumulants.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
->] (./streaming.bbl [8pdfTeX warning (ext4): destination with the same identifi
-er (name{figure.11}) has been already used, duplicate ignored
+>] (./streaming.bbl
+Underfull \vbox (badness 5077) has occurred while \output is active []
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.38 ...{Scoccimarro}}{{Scoccimarro}}{2004}]{sc04}
-                                                   <./Figures/rel_los_component
-s.pdf>])
-<./Figures/rel_los_convergence.pdf, id=957, 631.25839pt x 221.68886pt>
+)
+<./Figures/rel_los_convergence.pdf, id=889, 631.25839pt x 221.68886pt>
 File: ./Figures/rel_los_convergence.pdf Graphic file (type pdf)
 
 <use ./Figures/rel_los_convergence.pdf>
 Package pdftex.def Info: ./Figures/rel_los_convergence.pdf used on input line 4
-46.
+53.
 (pdftex.def)             Requested size: 486.07047pt x 170.70094pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 461.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 468.
+ [8pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.468 \end{document}
+                     <./Figures/fourth_cumulants.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [9pdfTeX warning (ext4): destination with the same identifier (name{figure.12}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.461 \end{document}
-                    
-
- <./Figures/rel_los_mass_components.pdf>]
+l.468 \end{document}
+                     <./Figures/rel_los_components.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10pdfTeX warning (ext4): destination with the same identifier (name{figure.A1
+ [10pdfTeX warning (ext4): destination with the same identifier (name{figure.13
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.468 \end{document}
+                     <./Figures/rel_los_mass_components.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11pdfTeX warning (ext4): destination with the same identifier (name{figure.A1
 .1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.461 \end{document}
+l.468 \end{document}
                      <./Figures/rel_los_convergence.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 461.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 468.
  (./streaming.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 461.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 461.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 468.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 468.
 Package rerunfilecheck Info: File `streaming.out' has not changed.
 (rerunfilecheck)             Checksum: 7B300B981C4BE300687F1B5DD829DFF2;655.
 
@@ -1249,16 +1276,16 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 461.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 468.
  ) 
 Here is how much of TeX's memory you used:
- 10067 strings out of 493013
- 136761 string characters out of 6139317
- 243667 words of memory out of 5000000
- 13237 multiletter control sequences out of 15000+600000
+ 10076 strings out of 493013
+ 136954 string characters out of 6139317
+ 243802 words of memory out of 5000000
+ 13243 multiletter control sequences out of 15000+600000
  99899 words of font info for 218 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,15n,37p,2122b,492s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,15n,37p,2122b,377s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1287,10 +1314,10 @@ ic/newtx/rtxmi5.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/rtxmi7.pfb>
 st/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/
 public/newtx/txexs.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txsys.pf
 b></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on streaming.pdf (10 pages, 668893 bytes).
+Output written on streaming.pdf (11 pages, 690606 bytes).
 PDF statistics:
- 1192 PDF objects out of 1200 (max. 8388607)
- 612 compressed objects within 7 object streams
- 78 named destinations out of 1000 (max. 500000)
- 154 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1271 PDF objects out of 1440 (max. 8388607)
+ 648 compressed objects within 7 object streams
+ 80 named destinations out of 1000 (max. 500000)
+ 159 words of extra memory for PDF output out of 10000 (max. 10000000)
 

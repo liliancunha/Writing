@@ -340,7 +340,7 @@
 		\kappa_{\mathrm{los}}  = & \left\langle v^4_{\mathrm{los}}\right\rangle - 4\left\langle v^3_{\mathrm{los}}\right\rangle\ \left\langle v_{\mathrm{los}}\right\rangle - 3\left\langle v^2_{\mathrm{los}}\right\rangle^2 \nonumber \\
 		& + 12\left\langle v^2_{\mathrm{los}}\right\rangle\left\langle v_{\mathrm{los}}\right\rangle^2 - 6\left\langle v_{\mathrm{los}}\right\rangle^4
 	\end{eqnarray}
-	The fourth raw moment of $v_{\mathrm{los}}$ is given taking Eq.~\ref{eq:los_vel_equivalence} and averaging as below
+	The fourth raw moment of $v_{\mathrm{los}}$ is given taking the fourth power of Eq.~\ref{eq:los_vel_equivalence} and averaging as below
 	\begin{eqnarray}\label{eq:v4}
 		\left\langle v^4_{\mathrm{los}}\right\rangle = \left\langle v^4_{\mathrm{r}}\right\rangle\cos^4\theta + 6\left\langle v^2_{\mathrm{r}}v^2_{\mathrm{T}}\right\rangle  \cos^2\theta\sin^2\theta + \left\langle v^4_{\mathrm{T}}\right\rangle\sin^4\theta \, ,
 	\end{eqnarray}
@@ -351,11 +351,18 @@
 		& + 6\left[\left\langle  v^2_{\mathrm{r}}v^2_{\mathrm{T}}\right\rangle - \left\langle  v^2_{\mathrm{r}}\right\rangle \left\langle v^2_{\mathrm{T}}\right\rangle\right]\cos^2\theta\sin^2\theta \nonumber\\
 		& -12 \left\langle v_{\mathrm{r}}\right\rangle \left[\left\langle  v_{\mathrm{r}}v^2_{\mathrm{T}}\right\rangle - \left\langle  v_{\mathrm{r}}\right\rangle \left\langle v^2_{\mathrm{T}}\right\rangle\right]\cos^2\theta\sin^2\theta
 	\end{eqnarray}
-	\begin{eqnarray}
+	Rewriting it in a more compact form, we get
+	\begin{eqnarray}\label{eq:c44}
 		\kappa_{\mathrm{los}} = &\kappa_{\mathrm{r}}\cos^4\theta + \kappa_{\mathrm{T}}\sin^4\theta + 6\left[\mathrm{Cov}\left(v^2_{\mathrm{r}},v^2_{\mathrm{T}}\right) \right.\nonumber \\
 		& \left. - 2\left\langle v_{\mathrm{r}}\right\rangle \mathrm{Cov}\left(v_{\mathrm{r}},v^2_{\mathrm{T}}\right)\right]\cos^2\theta\sin^2\theta
 	\end{eqnarray}
-	
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.7]{fourth_cumulants}
+		\caption{Checking the equivalence of fourth cumulant as shown in Eq.~\ref{eq:c44}}.
+		\label{fig:4cum}
+	\end{figure}
+	The equivalence of Eq.~\ref{eq:c44} can be seen in Fig.~\ref{fig:4cum}.
 	\section{Dissecting Velocity Distribution}
 	
 	To have a better understanding of the relative line-of-sight velocity distribution, it is important to know how halo and non-halo particles plays a role in the distribution. For this purpose, we classify the dark matter particles as either `halo' particles or `field' particle. This was done with the help of ROCKSTAR halo finder. Particles which were identified to belong to a halo were subsequently classified as `halo' particles and the rest as `field' particles.  
