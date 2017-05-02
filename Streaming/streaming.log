@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.4.11)  2 MAY 2017 13:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.4.11)  2 MAY 2017 13:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1287,7 +1287,7 @@ ic/newtx/rtxmi5.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/rtxmi7.pfb>
 st/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/
 public/newtx/txexs.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txsys.pf
 b></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on streaming.pdf (10 pages, 668895 bytes).
+Output written on streaming.pdf (10 pages, 668893 bytes).
 PDF statistics:
  1192 PDF objects out of 1200 (max. 8388607)
  612 compressed objects within 7 object streams
