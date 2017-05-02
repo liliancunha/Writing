@@ -335,17 +335,27 @@
 	\label{fig:cumulants}
 \end{figure*}
 	\subsubsection{Fourth cumulant}
-	\begin{eqnarray}
+	The fourth cumulant of the relative line-of-sight velocity is given as
+	\begin{eqnarray}\label{eq:c4}
 		\kappa_{\mathrm{los}}  = & \left\langle v^4_{\mathrm{los}}\right\rangle - 4\left\langle v^3_{\mathrm{los}}\right\rangle\ \left\langle v_{\mathrm{los}}\right\rangle - 3\left\langle v^2_{\mathrm{los}}\right\rangle^2 \nonumber \\
 		& + 12\left\langle v^2_{\mathrm{los}}\right\rangle\left\langle v_{\mathrm{los}}\right\rangle^2 - 6\left\langle v_{\mathrm{los}}\right\rangle^4
 	\end{eqnarray}
-	\begin{eqnarray}
+	The fourth raw moment of $v_{\mathrm{los}}$ is given taking Eq.~\ref{eq:los_vel_equivalence} and averaging as below
+	\begin{eqnarray}\label{eq:v4}
 		\left\langle v^4_{\mathrm{los}}\right\rangle = \left\langle v^4_{\mathrm{r}}\right\rangle\cos^4\theta + 6\left\langle v^2_{\mathrm{r}}v^2_{\mathrm{T}}\right\rangle  \cos^2\theta\sin^2\theta + \left\langle v^4_{\mathrm{T}}\right\rangle\sin^4\theta \, ,
 	\end{eqnarray}
-	\begin{multline}
-		\kappa_{\mathrm{los}} = \left[ \left\langle v^4_{\mathrm{r}}\right\rangle - 4\left\langle v^3_{\mathrm{r}}\right\rangle\ \left\langle v_{\mathrm{r}}\right\rangle - 3\left\langle v^2_{\mathrm{r}}\right\rangle^2 + 12\left\langle v^2_{\mathrm{r}}\right\rangle\left\langle v_{\mathrm{r}}\right\rangle^2 - \right.\nonumber\\
-		\left. 6\left\langle v_{\mathrm{r}}\right\rangle^4\right]\cos^4\theta + \left[\left\langle\right\rangle\right]
-	\end{multline}
+	Combining Eqs.~\ref{eq:v1}, \ref{eq:v2}, \ref{eq:v3} and \ref{eq:v4}, we can rewrite Eq.~\ref{eq:c4} as
+	\begin{eqnarray}
+		\kappa_{\mathrm{los}} =& \left[ \left\langle v^4_{\mathrm{r}}\right\rangle - 4\left\langle v^3_{\mathrm{r}}\right\rangle\ \left\langle v_{\mathrm{r}}\right\rangle - 3\left\langle v^2_{\mathrm{r}}\right\rangle^2 + 12\left\langle v^2_{\mathrm{r}}\right\rangle\left\langle v_{\mathrm{r}}\right\rangle^2 - \right.\nonumber\\
+		&\left. 6\left\langle v_{\mathrm{r}}\right\rangle^4\right]\cos^4\theta + \left[\left\langle v^4_{\mathrm{T}} \right\rangle -3\left\langle v^2_{\mathrm{T}} \right\rangle^2\right]\sin^4\theta  \nonumber \\
+		& + 6\left[\left\langle  v^2_{\mathrm{r}}v^2_{\mathrm{T}}\right\rangle - \left\langle  v^2_{\mathrm{r}}\right\rangle \left\langle v^2_{\mathrm{T}}\right\rangle\right]\cos^2\theta\sin^2\theta \nonumber\\
+		& -12 \left[\left\langle  v_{\mathrm{r}}v^2_{\mathrm{T}}\right\rangle - \left\langle  v_{\mathrm{r}}\right\rangle \left\langle v^2_{\mathrm{T}}\right\rangle\right]\left\langle v_{\mathrm{r}}\right\rangle\cos^2\theta\sin^2\theta
+	\end{eqnarray}
+	\begin{eqnarray}
+		\kappa_{\mathrm{los}} = &\kappa_{\mathrm{r}}\cos^4\theta + \kappa_{\mathrm{T}}\sin^4\theta + 6\left[\mathrm{Cov}\left(v^2_{\mathrm{r}},v^2_{\mathrm{T}}\right) \right.\nonumber \\
+		& \left. - 2\left\langle v_{\mathrm{r}}\right\rangle \mathrm{Cov}\left(v_{\mathrm{r}},v^2_{\mathrm{T}}\right)\right]\cos^2\theta\sin^2\theta
+	\end{eqnarray}
+	
 	\section{Dissecting Velocity Distribution}
 	
 	To have a better understanding of the relative line-of-sight velocity distribution, it is important to know how halo and non-halo particles plays a role in the distribution. For this purpose, we classify the dark matter particles as either `halo' particles or `field' particle. This was done with the help of ROCKSTAR halo finder. Particles which were identified to belong to a halo were subsequently classified as `halo' particles and the rest as `field' particles.  
