@@ -273,7 +273,7 @@
 	\begin{eqnarray} \label{eq:los_vel_equivalence}
 	v_{\mathrm{los}} = \mathrm{sgn}(r_{\parallel}) \left[v_{\mathrm{r}} \cos\theta + v_{\mathrm{T}}\sin\theta\right] \, ,
 	\end{eqnarray}
-	\noindent where $\cos\theta = r_{\parallel}/r$. Fig.~\ref{fig:los_relation} shows that the equivalence of Eq.~\ref{eq:los_vel_equivalence} indeed holds true. Thus it is exact. As we know exactly how to go from one formulation to another, it would be interesting to how they are related to each other statistically, namely we show the first three cumulants and how they are related to each other in the coming subsections.
+	\noindent where $\cos\theta = r_{\parallel}/r$. Fig.~\ref{fig:los_relation} shows that the equivalence of Eq.~\ref{eq:los_vel_equivalence} indeed holds true, thus it is exact. As we know exactly how to go from one formulation to another, it would be interesting to how they are related to each other statistically, namely we show the first four cumulants and how they are related to each other in the coming subsections.
 
 	
 	\begin{figure*}
@@ -362,15 +362,15 @@
 		\caption{Checking the equivalence of fourth cumulant as shown in Eq.~\ref{eq:c44}}.
 		\label{fig:4cum}
 	\end{figure}
-	\noindent The equivalence of Eq.~\ref{eq:c44} can be seen in Fig.~\ref{fig:4cum}. This also gives us an idea of how the non-Gaussian features of the $v_{\mathrm{los}}$ distribution comes about due to the different covariance of radial and tangential velocity.
+	\noindent The equivalence of Eq.~\ref{eq:c44} can be seen in Fig.~\ref{fig:4cum}. This also gives us an idea of how the non-Gaussian features of the $v_{\mathrm{los}}$ distribution comes about due to the different covariance of radial and tangential velocity in the higher cumulants.
 	
-	\section{Dissecting Velocity Distribution}
+	\subsection{Dissecting Velocity Distribution}
 	
 	To have a better understanding of the relative line-of-sight velocity distribution, it is important to know how halo and non-halo particles plays a role in the distribution. For this purpose, we classify the dark matter particles as either `halo' particles or `field' particle. This was done with the help of ROCKSTAR halo finder. Particles which were identified to belong to a halo were subsequently classified as `halo' particles and the rest as `field' particles.  
 	
-	Fig.~\ref{fig:rel_los_comp} shows the result of how the components contribute to the total distribution. We see that at all scales we have considered here, the field-field component seems to be the dominant factor. The mean infalling velocity of the full DM distribution hence seems to be driven by the field-field particle pairs. However it should be noted that halo-halo pairs have a more negative in-fall velocity compared to the field pairs.  Narrow wings of the field-field component with the mean in-fall velocity of zero indicates that the pairs  which does not belong to halos mostly undergo coherent motion. The wings of the total distribution are contributed by both the halo-halo and the field-halo pairs. The combination of distributions of these components with different mean in-fall velocity gives rise to the asymmetry along with a fatter tail than what is to be expected from a normal distribution. 
+	Fig.~\ref{fig:rel_los_comp} shows the result of how the components contribute to the total distribution. We see that at all scales we have considered here, the field-field component seems to be the dominant factor. The mean in-fall velocity of the full DM distribution hence seems to be driven by the field-field particle pairs. However it should be noted that halo-halo pairs have a lower in-fall velocity compared to the field-field pairs, implying that on average halo-halo pairs are moving towards each other at a faster rate.  Narrow wings of the field-field component with the mean in-fall velocity of zero indicates that the pairs  which does not belong to halos mostly undergo coherent motion. The wings of the total distribution are contributed by both the halo-halo and the field-halo pairs. The combination of distributions of these components with different mean in-fall velocity gives rise to the asymmetry along with a fatter tail than what is to be expected from a normal distribution. 
 	
-	Similarly we can dissect the halo-halo PDF into further subsamples defined by the halo mass. Fig.~\ref{fig:rel_los_mass_comp} shows the contribution from each of the subsamples considered which is normalised to the halo PDF. It should be noted that the PDFs of the subsamples were created using particles of same mass subsample, cross contributions are not shown here. The mean in-fall velocity goes lower with higher mass, which is expected as with a massive halo, the potential of the system increases and thus the pairs fall into each other at a faster pace resulting in a lower mean in-fall velocity.
+	Similarly we can dissect the halo-halo PDF into further subsamples defined by the halo mass. Fig.~\ref{fig:rel_los_mass_comp} shows the contribution from each of the subsamples considered which is normalised to the halo PDF. It should be noted that the PDFs of the subsamples were created using particles of same mass subsample, cross contributions are not shown here. The mean in-fall velocity goes lower with higher mass, which is expected as with a massive halo, the potential of the system increases and thus the pairs fall into each other at a faster rate resulting in a lower mean in-fall velocity.
 	
 	
 	\begin{figure*}
@@ -399,15 +399,15 @@
 
 	\section{Phenomenological Model}
 
-	In prior sections, we showed the validity of the streaming equation and how different components contribute to the distribution. However we would like to have a phenomenological model to describe the relative line-of-sight velocity and use that in the streaming equation. Looking into the literature for semi-heavy tailed distribution, we were able to use generalised hyperbolic distribution to model the relative line-of-sight velocity PDF. The distribution can be characterised as
+	In prior sections, we showed the validity of the streaming equation and how different components contribute to the distribution. However we would like to have a phenomenological model to describe the relative line-of-sight velocity and use that in the streaming equation. Looking into the literature for semi-heavy tailed distribution, we were able to use generalised hyperbolic distribution to model the $v_{\mathrm{los}}$ PDF. The distribution can be characterised as
 	
 	\begin{multline}
-		f_{\mathrm{GH}}(x) = C(\lambda, \alpha,\beta,\delta,\mu) \left(\delta^2+\left(x-\mu\right)^2\right)^{\frac{\lambda-1/2}{2}}  \\
-		\exp\left(\beta\left(x-\mu\right)\right) K_{\lambda-\frac{1}{2}}\left(\alpha\sqrt{\delta^2+(x-\mu)^2}\right) \, ,
+		f_{\mathrm{GH}}(x) = C\left(\lambda, \alpha,\beta,\delta,\mu\right) \left[\delta^2+\left(x-\mu\right)^2\right]^{\frac{\lambda-1/2}{2}}  \\
+		\exp\left[\beta\left(x-\mu\right)\right] K_{\lambda-\frac{1}{2}}\left(\alpha\sqrt{\delta^2+(x-\mu)^2}\right) \, ,
 	\end{multline}
-	\noindent where $C(\lambda, \alpha,\beta,\delta,\mu)$ is the normalisation term and it is given by
+	\noindent where $C\left(\lambda, \alpha,\beta,\delta,\mu\right)$ is the normalisation term and it is given by
 	\begin{eqnarray}
-		C(\lambda, \alpha,\beta,\delta,\mu) = \frac{\left(\alpha^2-\beta^2\right)^{\frac{\lambda}{2}}}{\sqrt{2\pi}\alpha^{\lambda - 1/2}\delta^\lambda K_{\lambda}\left(\delta\sqrt{\alpha^2-\beta^2}\right)}  \, ,
+		C\left(\lambda, \alpha,\beta,\delta,\mu\right) = \frac{\left(\alpha^2-\beta^2\right)^{\frac{\lambda}{2}}}{\sqrt{2\pi}\alpha^{\lambda - 1/2}\delta^\lambda K_{\lambda}\left(\delta\sqrt{\alpha^2-\beta^2}\right)}  \, ,
 	\end{eqnarray}
 	
 	\noindent where $K_{\lambda}$ is the modified Bessel function of the third kind with index of $\lambda$.
