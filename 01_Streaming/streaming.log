@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.7.27)  3 MAY 2017 12:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.7.27)  4 MAY 2017 15:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1178,7 +1178,10 @@ l.410
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/cumulants.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
->] (./streaming.bbl)
+>] (./streaming.bbl
+Underfull \vbox (badness 2932) has occurred while \output is active []
+
+)
 <./Figures/rel_los_convergence.pdf, id=893, 631.25839pt x 221.68886pt>
 File: ./Figures/rel_los_convergence.pdf Graphic file (type pdf)
 
@@ -1274,7 +1277,7 @@ live/texmf-dist/fonts/type1/public/newtx/txex-bar.pfb></usr/share/texlive/texmf
 type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
 mes/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
 >
-Output written on streaming.pdf (11 pages, 683898 bytes).
+Output written on streaming.pdf (11 pages, 684036 bytes).
 PDF statistics:
  1281 PDF objects out of 1440 (max. 8388607)
  656 compressed objects within 7 object streams
