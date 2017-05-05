@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.7.27)  4 MAY 2017 16:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.7.27)  5 MAY 2017 15:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1178,24 +1178,21 @@ l.410
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/cumulants.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
->] (./streaming.bbl
-Underfull \vbox (badness 2932) has occurred while \output is active []
-
-)
+>] (./streaming.bbl)
 <./Figures/rel_los_convergence.pdf, id=893, 631.25839pt x 221.68886pt>
 File: ./Figures/rel_los_convergence.pdf Graphic file (type pdf)
 
 <use ./Figures/rel_los_convergence.pdf>
 Package pdftex.def Info: ./Figures/rel_los_convergence.pdf used on input line 4
-61.
+62.
 (pdftex.def)             Requested size: 486.07047pt x 170.70094pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 476.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 477.
  [8pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.476 \end{document}
+l.477 \end{document}
                      <./Figures/fourth_cumulants.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1204,7 +1201,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.476 \end{document}
+l.477 \end{document}
                      <./Figures/rel_los_components.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1213,7 +1210,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.476 \end{document}
+l.477 \end{document}
                      <./Figures/rel_los_mass_components.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1222,12 +1219,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.476 \end{document}
+l.477 \end{document}
                      <./Figures/rel_los_convergence.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 476.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 477.
  (./streaming.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 476.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 476.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 477.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 477.
 Package rerunfilecheck Info: File `streaming.out' has not changed.
 (rerunfilecheck)             Checksum: 497836D93D525643B231070FE069388A;669.
 
@@ -1235,11 +1232,11 @@ Package rerunfilecheck Info: File `streaming.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 476.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 477.
  ) 
 Here is how much of TeX's memory you used:
- 9839 strings out of 493104
- 136656 string characters out of 6139413
+ 9840 strings out of 493104
+ 136667 string characters out of 6139413
  245107 words of memory out of 5000000
  12977 multiletter control sequences out of 15000+600000
  96969 words of font info for 215 fonts, out of 8000000 for 9000
@@ -1277,10 +1274,10 @@ live/texmf-dist/fonts/type1/public/newtx/txex-bar.pfb></usr/share/texlive/texmf
 type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
 mes/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
 >
-Output written on streaming.pdf (11 pages, 684036 bytes).
+Output written on streaming.pdf (11 pages, 684184 bytes).
 PDF statistics:
- 1281 PDF objects out of 1440 (max. 8388607)
- 656 compressed objects within 7 object streams
- 82 named destinations out of 1000 (max. 500000)
+ 1282 PDF objects out of 1440 (max. 8388607)
+ 657 compressed objects within 7 object streams
+ 83 named destinations out of 1000 (max. 500000)
  159 words of extra memory for PDF output out of 10000 (max. 10000000)
 
