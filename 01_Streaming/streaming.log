@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.5.5)  6 MAY 2017 12:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.5.5)  7 MAY 2017 19:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1256,16 +1256,17 @@ l.414 	\end{multline}
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/fourth_cumulants.pdf): PDF in
 clusion: multiple pdfs with page group included in a single page
 >]
-Underfull \vbox (badness 1275) has occurred while \output is active []
-
+Overfull \hbox (22.56213pt too wide) in alignment at lines 421--423
+ [][][] []
+ []
 
 (./streaming.bbl [8pdfTeX warning (ext4): destination with the same identifier 
 (name{figure.12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.49 \end{thebibliography}
-                           <./Figures/rel_los_components.pdf>])
+l.43   et~al.}{2015}]{uh15}
+                            <./Figures/rel_los_components.pdf>])
 <./Figures/rel_los_convergence.pdf, id=1022, 631.25839pt x 221.68886pt>
 File: ./Figures/rel_los_convergence.pdf Graphic file (type pdf)
 
@@ -1312,7 +1313,7 @@ Here is how much of TeX's memory you used:
  13181 multiletter control sequences out of 15000+600000
  99593 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,15n,37p,2122b,496s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,15n,37p,2122b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1332,7 +1333,7 @@ usr/share/texmf-dist/fonts/type1/public/newtx/rtxmi7.pfb></usr/share/texmf-dist
 /fonts/type1/public/txfonts/rtxr.pfb></usr/share/texmf-dist/fonts/type1/public/
 newtx/txexs.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr
 /share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on streaming.pdf (10 pages, 560759 bytes).
+Output written on streaming.pdf (10 pages, 561732 bytes).
 PDF statistics:
  1226 PDF objects out of 1440 (max. 8388607)
  617 compressed objects within 7 object streams
