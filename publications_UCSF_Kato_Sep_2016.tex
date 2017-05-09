@@ -1,0 +1,110 @@
+%______________________________________________________________________________________________________________________
+% @brief    LaTeX2e Resume for Kamil K Wojcicki
+\documentclass[line,a4paper]{resume}
+
+% Allow text with accents and Umlauts.
+\usepackage[ansinew]{inputenc}
+%\usepackage{pifont}
+\usepackage[english,austrian]{babel}
+%\usepackage[T1]{fontenc}
+\usepackage{graphicx,wrapfig,multirow}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage[colorlinks=true, a4paper=true, pdfstartview=FitV, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+% \pdfcompresslevel=9
+
+\newcommand{\superscript}[1]{\ensuremath{^{\text{#1}}}}
+\newcommand{\subscript}[1]{\ensuremath{_{\text{#1}}}}
+%\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{ifthen}
+\newboolean{ToAustria}
+
+% Set to true for Austria Contact, false for NJ
+\setboolean{ToAustria}{true} 
+
+% Headers and footers
+\usepackage{fancyhdr}
+
+%______________________________________________________________________________________________________________________
+\begin{document}
+
+ \fontencoding{T1}
+  \fontfamily{phv}
+  \fontseries{m}
+  \fontshape{n}
+  \fontsize{10}{12}
+  \selectfont
+
+
+\name{\Large Matthew D. DiFranco, PhD \hspace{33mm} {\small mdifranc@gmail.com/+43(0)660 142 7331}}
+\pagestyle{fancy}	
+\lhead{}
+\chead{}
+\rhead{\leftmark}
+\lfoot{}
+\cfoot{}
+\rfoot{\thepage}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyhfoffset[L]{\hoffset}
+
+% Defines the height of the header.
+\setlength{\headheight}{10pt}
+\setlength{\textheight}{725pt}
+
+\newpage
+\begin{resume}
+
+%__________________________________________________________________________________________________________________
+   % Publications
+    \section{\mysidestyle Publications}\vspace{2mm}
+	\begin{minipage}{\textwidth}
+	Rausch, I., Rust, P., \textbf{DiFranco, M.D.}, Lassen, M., Stadlbauer, A., Mayerhoefer, M. E., Hartenbach, M., Hacker, M., Beyer, T. (2016) ``Reproducibility of MRI Dixon-based attenuation correction in combined PET/MR with applications for lean body mass estimation'', \emph{Journal of Nuclear Medicine}, ePub ahead of print; doi:10.2967/jnumed.115.168294 \\[2mm]
+	\end{minipage}	
+	\begin{minipage}{\textwidth}
+	Weingant, M., Reynolds, H.M., Mitchell, C., Williams, S., Allan, P., Haworth, A., \textbf{DiFranco, M.D.} (2015) ``Ensemble Prostate Tumor Classification in H\&E Whole Slide Imaging via Stain Normalization and Cell Density Estimation'', \emph{Proc. MICCAI Workshop on Machine Learning in Medical Imaging 2015}, 9352:280-287 \\[2mm]
+	\end{minipage}	
+	\begin{minipage}{\textwidth}
+	\textbf{DiFranco, M.D.}, Reynolds, H.M., Mitchell, C., Williams, S., Allan, P., Haworth, A. (2015) ``Performance assessment of automated tissue characterization for prostate H and E stained histopathology'', \emph{Proc. SPIE Medical Imaging 2015: Digital Pathology}, 94200M; doi:10.1117/12.2081787\\[2mm]
+	\end{minipage}
+	\begin{minipage}{\textwidth}
+	Valentinitsch, A., Fischer, L., Patsch, J.M., Bauer, J., Kainberger, F., Langs, G., \textbf{DiFranco, M.} (2015) ``Trabecular bone class mapping across resolutions: translating methods from HR-pQCT to clinical CT'', \emph{Proc. SPIE Medical Imaging 2015: Image Processing}, 94131D; doi:10.1117/12.2081187\\[2mm]
+	\end{minipage}
+	\begin{minipage}{\textwidth}
+	Hartenbach, M., Hartenbach, S., Baltzer, P., Susani, M., Seitz, C., Kenner, L., Wadsak, W., \textbf{DiFranco, M.}, Haug, A., and Hacker, M., ``Simultaneous multi-parametric dualtracer-PET/MRI for tumor characterization of primary prostate cancer'', Journal of Nuclear Medicine, vol. 56, no. 3, pp. 509?509, May 2015; \\[2mm]
+	\end{minipage}
+	\begin{minipage}{\textwidth}
+	Fischer, L., Valentinitsch, A., \textbf{DiFranco, M.D.}, Schueller-Weidekamm, C., Kienzl, D., Resch, H., Gross, T., Weber, M., Jaksch, P., Klepetko, W., Zweytick, B., Pietschmann, P., Kainberger, F., Langs, G., Patsch, J.M. (2014). ``High-resolution peripheral quantitative CT imaging: Cortical porosity, poor trabecular bone microarchitecture, and low bone strength in lung transplant recipients'', \emph{Radiology}, 274(2):473-481; doi:10.1148/radiol.14140201\\[2mm]
+	\end{minipage}
+	\begin{minipage}{\textwidth}
+	Nowosielski, M., \textbf{DiFranco, M.}, Putzer, D., Seiz, M., Recheis, W., Jacobs, A.H., Stockhammer, G., Hutterer, M. (2013). ``An intra-individual comparison of MRI, [18F]-FET and [18F]-FLT PET in patients with high-grade gliomas'', \emph{PLoS ONE}, 9(4):e95830; doi:10.1371/journal.pone.0095830\\[2mm]
+	\end{minipage}
+	\begin{minipage}{\textwidth}
+	Kral, F., \textbf{DiFranco, M.}, Puschban, J., Hoermann, R., Riechelmann, H., Freysinger, W. (2013), ``A New Nasopharyngeal Dynamic Reference Frame Improves Accuracy in Navigated Skull Base Targets'', \emph{Surgical Innovation}, Advance online publication. doi:10.1177/1553350613503738\\[2mm]
+	\end{minipage}
+	\begin{minipage}{\textwidth}
+	\textbf{DiFranco, M.D.}, O'Hurley, G., Kay, E. W., Watson, R. William G. and Cunningham, P. (2011), ``Ensemble based system for whole-slide prostate cancer probability mapping using color texture features'', \emph{Computerized Medical Imaging and Graphics}, 35(7-8):629-645. doi:10.1016/j.compmedimag.2010.12.005\\[2mm]
+	\end{minipage}
+	\begin{minipage}{\textwidth}
+	\textbf{DiFranco, M.}, O'Hurley, G., Kay, E. W., Watson, R. William G. and Cunningham, P. (2009), ``Mapping suspected prostatic carcinoma using smoothed co-occurrence texture features'', \emph{Proceedings of 1st Workshop on Optical Tissue Image Analysis in Microscopy, Histopathology, and Endoscopy}, London, UK. \\[2mm]
+	\end{minipage}
+	\begin{minipage}{\textwidth}
+	\textbf{DiFranco, M.}, O'Hurley, G., Kay, E. W., Watson, R. William G. and Cunningham, P. (2008), ``Automated Gleason scoring of prostatic histopathology slides using multi-channel co-occurrence texture features'', \emph{Proceedings of 3rd Workshop on Microsopic Image Analysis with Applications in Biology}, New York, NY, USA. \\[2mm]
+	\end{minipage}
+	\begin{minipage}{\textwidth}
+	Foley, R., \textbf{DiFranco, M.}, Bryan, K., Rexhepaj, E., Mulrane, L., Watson, W., Cunningham, P. and Gallagher, W. (2008), ``Automated image analysis approaches in histopathology'', Handbook of Research on Systems Biology Applications in Medicine. \\[2mm]
+	\end{minipage}
+	\begin{minipage}{\textwidth}
+	Tobin, J.  L., \textbf{Di Franco, M.}, Eichers, E., May-Simera, H., Garcia, M., Yan, J., Quinlan, R., Justice, M. J., Hennekam, R. C., Briscoe, J., Tada, M., Mayor, R., Burns, A. J., Lupski, J. R., Hammond, P., and Beales, P. L. (2008).  ``Inhibition of neural crest migration underlies craniofacial dysmorphology and Hirschsprung's disease in Bardet-Biedl syndrome'', \emph{Proceedings of the National Academy of Sciences of the United States of America}, 105(18):6714-6719.
+	\end{minipage}
+
+%______________________________________________________________________________________________________________________
+\end{resume}
+\end{document}
+
+
+%______________________________________________________________________________________________________________________
+% EOF
+
